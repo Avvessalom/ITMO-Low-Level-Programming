@@ -52,6 +52,7 @@ A scalar product of two vectors ![equation](https://latex.codecogs.com/gif.latex
 For example, the scalar product of vectors (1, 2, 3) and (4, 5, 6) is
 
 ![equation](https://latex.codecogs.com/gif.latex?1*4&plus;2*5&plus;3*6=4&plus;10&plus;18=32)
+
 The solution should consist of
  * Two global arrays of int of the same size.
  * A function to compute the scalar product of two given arrays.
