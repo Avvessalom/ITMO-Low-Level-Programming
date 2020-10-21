@@ -45,6 +45,7 @@ macro. Include it in main.asm.
 print an error message
 
 # Lab 3  Scalar Product &  Prime Number Checker
+## Scalar Product
 A scalar product of two vectors ![equation](https://latex.codecogs.com/gif.latex?(a_1,a_2...a_n)) and ![equation](https://latex.codecogs.com/gif.latex?(b_1,b_2...b_n)) is the sum
 
 ![equation](https://latex.codecogs.com/gif.latex?\sum&space;^n_{i=1}a_ib_i=a_1b_1&plus;a_2b_2&plus;...&plus;a_nb_n)
@@ -57,4 +58,11 @@ The solution should consist of
  * Two global arrays of int of the same size.
  * A function to compute the scalar product of two given arrays.
  * A main function which calls the product computations and outputs its results.
+ 
+## Prime Number Checker
+You have to write a function to test the number for primarity. The interesting thing is that the number will be
+of the type unsigned long and that it will be read from stdin.
+ * You have to write a function int is_prime( unsigned long n ), which checks whether n is a prime number or not. If it is the case, the function will return 1; otherwise 0.
+ * The main function will read an unsigned long number and call is_prime function on it. Then, depending on its result, it will output either yes or no.
+
 
