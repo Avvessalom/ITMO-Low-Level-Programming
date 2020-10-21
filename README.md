@@ -43,3 +43,17 @@ macro. Include it in main.asm.
  * Read the input string in a buffer of maximum 255 characters long.
  * Try to find this key in dictionary. If found, print the corresponding value. If not,
 print an error message
+
+# Lab 3  Scalar Product &  Prime Number Checker
+A scalar product of two vectors ![equation](https://latex.codecogs.com/gif.latex?(a_1,a_2...a_n)) and ![equation](https://latex.codecogs.com/gif.latex?(b_1,b_2...b_n)) is the sum
+
+![equation](https://latex.codecogs.com/gif.latex?\sum&space;^n_{i=1}a_ib_i=a_1b_1&plus;a_2b_2&plus;...&plus;a_nb_n)
+
+For example, the scalar product of vectors (1, 2, 3) and (4, 5, 6) is
+
+![equation](https://latex.codecogs.com/gif.latex?1*4&plus;2*5&plus;3*6=4&plus;10&plus;18=32)
+The solution should consist of
+ * Two global arrays of int of the same size.
+ * A function to compute the scalar product of two given arrays.
+ * A main function which calls the product computations and outputs its results.
+
