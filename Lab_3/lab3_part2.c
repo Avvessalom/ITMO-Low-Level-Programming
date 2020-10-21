@@ -1,12 +1,13 @@
 #include <stdio.h>
+#include "lab3_part2.h"
 
-int isPrime(unsigned long n);
-int main() {
+
+int main(int args, char *argv[]) {
     unsigned long n;
     printf("Please input your number: \n");
     scanf("%lu", &n);
     printf("(%lu) Is prime: ", n);
-    printf(isPrime(n) ? "Yes\n" : "No\n");
+    puts(isPrime(n) ? "Yes" : "No");
     return 0;
 }
 
