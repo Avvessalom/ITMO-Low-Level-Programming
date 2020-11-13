@@ -65,4 +65,4 @@ of the type unsigned long and that it will be read from stdin.
  * You have to write a function int is_prime( unsigned long n ), which checks whether n is a prime number or not. If it is the case, the function will return 1; otherwise 0.
  * The main function will read an unsigned long number and call is_prime function on it. Then, depending on its result, it will output either yes or no.
 
-# Lab 4-5  Linked List & Higher-Order Functions and Lists
+# Lab 4 Linked List & Higher-Order Functions and Lists
