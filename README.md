@@ -80,7 +80,7 @@ short, signal about it.
 You need to learn to use
 
 * Structural types to encode the linked list itself.
-* The EOF constant. Read the section “Return value” of the man scanf.
+* The `EOF` constant. Read the section “Return value” of the man scanf.
 
 You can be sure that
 
@@ -89,20 +89,20 @@ You can be sure that
 
 Following is the recommended list of functions to implement:
 
-* list_create – accepts a number, returns a pointer to the new linked list node.
-* list_add_front – accepts a number and a pointer to a pointer to the linked list.
+* `list_create` – accepts a number, returns a pointer to the new linked list node.
+* `list_add_front` – accepts a number and a pointer to a pointer to the linked list.
 Prepends the new node with a number to the list.
 
 For example: a list (1,2,3), a number 5, and the new list is (5,1,2,3).
 
-* list_add_back, adds an element to the end of the list. The signature is the same as
+* `list_add_back`, adds an element to the end of the list. The signature is the same as
 list_add_front.
-* list_get gets an element by index, or returns 0 if the index is outside the list bounds.
-* list_free frees the memory allocated to all elements of list.
-* list_length accepts a list and computes its length.
-* list_node_at accepts a list and an index, returns a pointer to struct list,
+* `list_get` gets an element by index, or returns 0 if the index is outside the list bounds.
+* `list_free` frees the memory allocated to all elements of list.
+* `list_length` accepts a list and computes its length.
+* `list_node_at` accepts a list and an index, returns a pointer to struct list,
 corresponding to the node at this index. If the index is too big, returns NULL.
-* list_sum accepts a list, returns the sum of elements.
+* `list_sum` accepts a list, returns the sum of elements.
 
 These are some additional requirements:
 
