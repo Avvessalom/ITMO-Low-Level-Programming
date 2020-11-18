@@ -1,0 +1,1 @@
+struct img *rotate(struct img const *pic);

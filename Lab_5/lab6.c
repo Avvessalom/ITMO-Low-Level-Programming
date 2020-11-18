@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 #include "bmp_io.h"
+#include "bmp_rotation.h"
 
 int main(int argc, char **argv) {
     if (argc != 2 && argc != 3){
@@ -39,6 +40,22 @@ int main(int argc, char **argv) {
         return 1;
     }
 
-    struct img *output_img = input_img; //-----------------------------------------------
-    write_bmp(output, output_img);
+    struct img *output_img = rotate(input_img); //-----------------------------------------------
+    switch (write_bmp(output, output_img)){
+        case WRITE_OK: 
+            puts("Image is saved");
+            return 0;
+        case WRITE_FILENAME_NOT_FOUND:
+            puts("Output file name is not specified");
+            return 1;
+        case WRITE_IMAGE_NOT_FOUND: 
+            puts("Output image is null.");
+            return 1;
+        case WRITE_FILE_ERROR: 
+            puts("Unable to open output file.");
+            return 1;
+        default: 
+            puts("Undefined writing error.");
+            return 1;
+    }
 }
