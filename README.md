@@ -181,3 +181,9 @@ void qsort( void *base,
 It accepts the array starting address base, elements count nmemb, size of individual elements size, and
 the comparator function compar. This function is the decision maker which tells which one of the given
 elements should be closer to the beginning of the array.
+
+# Lab 5
+
+# Lab 6
+
+# Lab 7
