@@ -187,3 +187,5 @@ elements should be closer to the beginning of the array.
 # Lab 6
 
 # Lab 7
+
+In this assignment, we are going to implement our own version of `malloc` and `free` based on the memory mapping system call `mmap` and a linked list of chunks of arbitrary sizes. It can be viewed as a simplified version of a memory manager typical for the standard C library and shares most of its weaknesses. For this assignment, the usage of `malloc`/`calloc`, `free` and `realloc` is forbidden
