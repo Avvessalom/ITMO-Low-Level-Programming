@@ -184,8 +184,17 @@ elements should be closer to the beginning of the array.
 
 # Lab 5
 
-# Lab 6
+# Lab 6  Image Rotation
 
-# Lab 7
+You have to create a program to rotate a BMP image of any resolution to 90 degrees clockwise.
+
+File Format BMP (BitMaP) format is a raster graphics format, which means that it stores an image as a table of colored dots (pixels). In this format the color is encoded with numbers of a fixed size (can be 1, 4, 8, 16, or 24 bits). If 1 bit is used per pixel, the image is black and white. If 24 bits are used, the number of different colors possible is roughly 16 million. We only implement the rotation of 24-bit images. The subset of BMP files that your program should be able to work with is described by the structure shown in Listing 13-16. It represents the file header, followed immediately by the pixel data. Architecture We want to think about program architecture that is extensible and modular.
+
+ 1. Describe the pixel structure struct pixel to not work with the raster table directly(as with completely structureless data). This should always be avoided.
+ 2. Separate the inner image representation from the input format. The rotation is performed on the inner image format, which is then serialized back to BMP. There can be changes in BMP format, you might want to support other formats, and you do not want to couple the rotation algorithm tightly to BMP. To achieve that, define a structure structure image to store the pixel array (continuous, now without padding) and some information that should really be kept. For example, there is absolutely no need to store BMP signature here, or any of the never-used header fields. We can get away with the image width and height in pixels. You will need to create functions to read an image from BMP file and to write it to BMP file (probably also to generate a BMP header from the inner representation).
+ 3. Separate file opening from its reading.
+ 4. Make error handling unified and handle errors in exactly one place (for this very program it is enough). To achieve that, define the from_bmp function, which will read a file from the stream and will return one of the codes that show whether the operation completed successfully or not. Remember the flexibility concerns. Your code should be easy to use in applications with graphical user interface (GUI) as well as in those without GUI at all, so throwing prints into stderr all over the place is not a good option: restrict them to the error handling piece of code. Your code should be easily adaptable for different input formats as well
+
+# Lab 7 `malloc` & `free`
 
 In this assignment, we are going to implement our own version of `malloc` and `free` based on the memory mapping system call `mmap` and a linked list of chunks of arbitrary sizes. It can be viewed as a simplified version of a memory manager typical for the standard C library and shares most of its weaknesses. For this assignment, the usage of `malloc`/`calloc`, `free` and `realloc` is forbidden
