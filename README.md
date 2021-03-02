@@ -1,7 +1,6 @@
 <h2 align=center>Low level programming</a> </h2>
 
-<h3 align=center> <a href="Lab_1">Lab 1  Input/Output Library
-</a> </h3>
+<h3 align=center> <a href="Lab_1">Lab 1  Input/Output Library</a> </h3>
 
 
 Function | Definition
@@ -20,7 +19,7 @@ parse_int | Accepts a null-terminated string and tries to parse a signed number 
 string_equals | Accepts two pointers to strings and compares them. Returns 1 if they are equal, otherwise 0.
 string_copy | Accepts a pointer to a string, a pointer to a buffer, and buffer’s length. Copies string to the destination. The destination address is returned if the string fits the buffer; otherwise zero is returned.
 
- <h3 align=center> <a href="Lab_2"Lab 2 Dictionary</a> </h3>
+<h3 align=center> <a href="Lab_2">Lab 2 Dictionary</a> </h3>
 
  
  The assignment will contain the following files:
@@ -50,7 +49,7 @@ macro. Include it in main.asm.
  * Try to find this key in dictionary. If found, print the corresponding value. If not,
 print an error message
 
- <h3 align=center> <a href="Lab_3" Lab 3  Scalar Product &  Prime Number Checker</a> </h3>
+ <h3 align=center> <a href="Lab_3"> Lab 3  Scalar Product &  Prime Number Checker</a> </h3>
 
 ## Scalar Product
 A scalar product of two vectors ![equation](https://latex.codecogs.com/gif.latex?(a_1,a_2...a_n)) and ![equation](https://latex.codecogs.com/gif.latex?(b_1,b_2...b_n)) is the sum
@@ -73,7 +72,7 @@ of the type unsigned long and that it will be read from stdin.
  * The main function will read an unsigned long number and call is_prime function on it. Then, depending on its result, it will output either yes or no.
 
 
- <h3 align=center> <a href="Lab_4" Lab 4 Linked List & Higher-Order Functions and Lists</a> </h3>
+ <h3 align=center> <a href="Lab_4"> Lab 4 Linked List & Higher-Order Functions and Lists</a> </h3>
 
 
 ## Linked List
@@ -194,7 +193,7 @@ elements should be closer to the beginning of the array.
 # Lab 5
 
 
- <h3 align=center> <a href="Lab_6" Lab 6  Image Rotation</a> </h3>
+ <h3 align=center> <a href="Lab_6"> Lab 6  Image Rotation</a> </h3>
 
 You have to create a program to rotate a BMP image of any resolution to 90 degrees clockwise.
 
@@ -205,7 +204,7 @@ File Format BMP (BitMaP) format is a raster graphics format, which means that it
  3. Separate file opening from its reading.
  4. Make error handling unified and handle errors in exactly one place (for this very program it is enough). To achieve that, define the from_bmp function, which will read a file from the stream and will return one of the codes that show whether the operation completed successfully or not. Remember the flexibility concerns. Your code should be easy to use in applications with graphical user interface (GUI) as well as in those without GUI at all, so throwing prints into stderr all over the place is not a good option: restrict them to the error handling piece of code. Your code should be easily adaptable for different input formats as well
 
- <h3 align=center> <a href="Lab_7" Lab 7 `malloc` & `free`</a> </h3>
+ <h3 align=center> <a href="Lab_7"> Lab 7 `malloc` & `free`</a> </h3>
 
 
 In this assignment, we are going to implement our own version of `malloc` and `free` based on the memory mapping system call `mmap` and a linked list of chunks of arbitrary sizes. It can be viewed as a simplified version of a memory manager typical for the standard C library and shares most of its weaknesses. For this assignment, the usage of `malloc`/`calloc`, `free` and `realloc` is forbidden
